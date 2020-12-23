@@ -7,3 +7,4 @@ This is my repo where I learn the basics of Go.
 TODO:
 - Integrate with (write to) a SQL-database
 - Implement unit testing
+- Swagger
