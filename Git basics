@@ -1,0 +1,38 @@
+Get latest changes from others:
+- fetch: Download latest changes from remote repo
+- merge: Apply fetched changes to own local branch
+
+***pull: Combines "fetch" and "merge" into one command
+	- git status: make sure that you don't have any staged or unstaged changes
+	  Git won't let you merge changes if you have anything staged for the next commit.
+	- git fetch
+	- git pull
+  
+WHEN YOU WANT TO MAKE CHANGES:
+1. Create a branch:
+	- git checkout -b sprint101/WA/40850/BuildTheWrapperView
+	
+2. MAKE YOUR CHANGES
+
+3. Commit your changes:
+	- Terminal: git commit -m "Add your message here"
+  
+  - On VS2019: Team Explorer > Changes > Review your changes & Click + (to Stage All)
+	- Add a comment of what you changed
+	- Press "Commit Staged" button
+	
+4. Push your changes:
+	- git push --set-upstream origin sprint101/WA/40850/BuildTheWrapperView
+	- git status 
+		To make sure on which branch you are, 
+		whether your branch is up to date, 
+		if you have anything to commit, and 
+		if your working tree is clean
+
+WHEN YOU'VE COMPLETED A TASK:
+1. Create a pull request
+2. Fill in: Title, Description, Reviewers and Work_items_to_link
+3. git status: To orientate yourself
+4. git checkout master: Switch to master branch
+5. git fetch
+6. git pull: Fastforward to current state
